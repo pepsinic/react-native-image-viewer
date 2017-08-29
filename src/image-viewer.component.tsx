@@ -437,9 +437,6 @@ export default class ImageViewer extends React.Component<typings.PropsDefine, ty
                         maxOverflow={this.props.maxOverflow}
                         horizontalOuterRangeOffset={this.handleHorizontalOuterRangeOffset.bind(this)}
                         responderRelease={this.handleResponderRelease.bind(this)}
-                        onLongPress={this.handleLongPress.bind(this, image)}
-                        onClick={this.handleClick.bind(this)}
-                        onDoubleClick={this.handleDoubleClick.bind(this)}>
                         <Image style={[this.styles.imageStyle, { width: width, height: height }]}
                             source={{ uri: image.url }} />
                     </ImageZoom>
@@ -473,9 +470,6 @@ export default class ImageViewer extends React.Component<typings.PropsDefine, ty
                                 maxOverflow={this.props.maxOverflow}
                                 horizontalOuterRangeOffset={this.handleHorizontalOuterRangeOffset.bind(this)}
                                 responderRelease={this.handleResponderRelease.bind(this)}
-                                onLongPress={this.handleLongPress.bind(this, image)}
-                                onClick={this.handleClick.bind(this)}
-                                onDoubleClick={this.handleDoubleClick.bind(this)}>
                                 <TouchableOpacity key={index}
                                     style={this.styles.failContainer}>
                                     <Image source={this.props.failImageSource}
